@@ -1,0 +1,118 @@
+.heading{
+    
+    width: 60%;
+    padding: 2rem;
+    text-align: center;
+    color:#ced4da;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.details{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    word-spacing: .5re;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding: 2rem;
+    
+}
+.expertise{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    background-color: cornsilk;
+}
+.contactus-section {
+    
+    padding: 3rem;
+    background-color: #f8f9fa; /* Background color for the section */
+  }
+  
+  .contact-leftside img {
+    max-width: 100%;
+    height: auto;
+    max-height: 30rem;
+  }
+  
+  .contact-input-feild {
+    margin-bottom: 2rem; /* Adjust the margin as needed */
+  }
+  
+  .contact-rightside form .form-control {
+    border: 1px solid #ced4da;
+    height: 3rem; /* Adjust the input height as needed */
+    border-radius: 0.5rem;
+    font-size: 1.4rem; /* Adjust the font size as needed */
+    padding-left: 1rem;
+    font-weight: normal; /* Use "normal" instead of "lighter" for better readability */
+  }
+  
+  .contact-rightside form .form-check-input {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .form-checkbox-style {
+    margin: 2rem 0; /* Adjust the margin as needed */
+  }
+  
+  .contact-rightside form .main-hero-para {
+    font-size: 1.4rem; /* Adjust the font size as needed */
+    color: #333; /* Use a specific color code or name */
+    margin: 0;
+    font-weight: normal; /* Use "normal" instead of "lighter" for better readability */
+    width: 75%;
+    padding: 0 2rem;
+  }
+  
+  /* Style the button */
+  .btn-style {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem; /* Button font size */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-style:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  .footer {
+    
+    
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  body{
+    background-color: black;
+  }
+  .nav{
+    padding: 1rem;
+    color: #333;
+  }
+  
