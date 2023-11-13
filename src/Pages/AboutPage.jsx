@@ -1,12 +1,13 @@
 import Navbar from "../Components/Navbar"
-import About from "../Components/About"
-import Info from "../Components/info"
+
+
 import Footer from "../Components/Footer"
+import Info from "../Components/Info"
 function AboutPage() {
   return (
     <div>
       <Navbar/>
-      <About/>
+     
       <Info/>
       <Footer/>
     </div>

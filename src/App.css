@@ -1,0 +1,21 @@
+@keyframes staggeredFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px) rotate(-10deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+  /* Apply staggered fade-in animation to each component */
+  .about,
+  .info,
+  .services,
+  .expertise,
+  .contact,
+  .footer {
+    animation: staggeredFadeIn 1s ease-out forwards;
+  }
+  
