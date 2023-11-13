@@ -4,6 +4,13 @@
     padding: 2rem;
     text-align: center;
     color:#ced4da;
+    font-size: 3rem;
+}
+.heading h1{
+  font-size: 14vw;
+}
+.heading p{
+  font-size: 1.5rem;
 }
 .about{
     display: flex;
@@ -16,6 +23,7 @@
     margin-top: 1rem;
     background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  color: #f8f9fa;
 }
 .details{
     margin-top: 1rem;
@@ -115,4 +123,34 @@
     padding: 1rem;
     color: #333;
   }
+  @media only screen and (max-width: 600px) {
+    .about {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
   
+    .heading {
+      text-align: center;
+      width: 100%;/* Center the text for smaller screens */
+    }
+  
+    
+  
+    .image {
+      float: none; /* Remove float for smaller screens */
+      margin-top: 1rem; /* Add margin for spacing on smaller screens */
+    }
+  
+    .responsiveImg {
+      width: 100%; /* Make the image width 100% for smaller screens */
+      height: auto; /* Allow the height to adjust proportionally */
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .heading h1 {
+      font-size: 8vw; /* Adjust font size for larger screens */
+    }
+  
+    .heading p {
+      font-size: 2vw; /* Adjust font size for larger screens */
+    }
+  }
