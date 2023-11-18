@@ -3,7 +3,7 @@ import "./comp.css"
 function Expertise() {
   return (
     <div style={{backgroundColor:"cornsilk"}}>
-        <h1 style={{textAlign:"center"}}>Our Expertise</h1>
+        <h1 style={{textAlign:"center",fontSize:'3rem'}}>Our Expertise</h1>
         <div className="expertise">
         <Figure>
       <Figure.Image

@@ -1,15 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import kaffLogo from "../assets/kaff_logo.png";
 import { NavLink } from 'react-router-dom';
-import "./comp.css"
+import kaffLogo from "../assets/kaff_logo.png";
+import "./comp.css";
+
 function MyNavbar() {
   return (
     <>
-      
-      <Navbar expand="lg" className="bg-body-tertiary w-[100%]  h-[10%]">
-        <Container >
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
           <Navbar.Brand href="/">
             <img
               alt=""
@@ -20,13 +20,16 @@ function MyNavbar() {
             />{' '}
             KAFF Solutions
           </Navbar.Brand>
-          <Nav className="me-auto ">
-          <NavLink to="/" className="nav">Home</NavLink>
-            <NavLink to="/about" className="nav">About</NavLink>
-            <NavLink to="/service" className="nav">Services</NavLink>
-            <NavLink to="/expertise" className="nav">Our Expertise</NavLink>
-            <NavLink to="/contacts"className="nav">Contact Us</NavLink>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <NavLink to="/" className="nav">Home</NavLink>
+              <NavLink to="/about" className="nav">About</NavLink>
+              <NavLink to="/service" className="nav">Services</NavLink>
+              <NavLink to="/expertise" className="nav">Our Expertise</NavLink>
+              <NavLink to="/contacts" className="nav">Contact Us</NavLink>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
