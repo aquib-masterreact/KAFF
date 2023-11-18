@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar"
 
 
 import Footer from "../Components/Footer"
-import Info from "../Components/Info"
+import Info from "../Components/info"
 function AboutPage() {
   return (
     <div>
