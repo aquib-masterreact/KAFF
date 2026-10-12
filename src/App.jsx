@@ -1,28 +1,51 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import { Routes,Route } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import AboutPage from './Pages/AboutPage';
-import ContactPage from './Pages/ContactPage';
-import ServicesPage from './Pages/ServicesPage';
-import ExpertisePage from './Pages/ExpertisePage';
+import { useEffect } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import ExpertisePage from "./pages/ExpertisePage";
+import ContactPage from "./pages/ContactPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-
-
-function App() {
-
-  return (
-    <>
-     <Routes>
-    <Route exact path="/" Component={HomePage}></Route>
-    <Route path="/about" Component={AboutPage}></Route>
-    <Route path="/contacts" Component={ContactPage}></Route>
-    <Route path="/service" Component={ServicesPage}></Route>
-    <Route path="/expertise" Component={ExpertisePage}></Route>
-   </Routes>
-      
-    </>
-  )
+// Scroll to the top on page change, or to the #section when a hash is present.
+function ScrollManager() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const el = document.getElementById(hash.slice(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+  return null;
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <ScrollManager />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/expertise" element={<ExpertisePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          {/* Old URLs */}
+          <Route path="/service" element={<Navigate to="/services" replace />} />
+          <Route path="/contacts" element={<Navigate to="/contact" replace />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
