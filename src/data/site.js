@@ -8,7 +8,7 @@ import appDevImg from "../assets/ADP.png";
 // Company details shown across the site. Update these in one place.
 export const company = {
   name: "KAFF Solutions",
-  domain: "kaffsolutions.in",
+  domain: "www.kaffsolutions.in",
   tagline: "IT Services & Consulting",
   email: "info@kaffsolutions.in",
   phone: "",
