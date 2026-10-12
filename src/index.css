@@ -169,7 +169,7 @@ p { margin: 0 0 1em; }
   color: var(--text);
 }
 .logo__mark {
-  height: 36px;
+  height: 40px;
   width: auto;
 }
 .logo__text {
@@ -179,12 +179,6 @@ p { margin: 0 0 1em; }
 }
 .logo__text span { font-weight: 500; color: var(--muted); }
 .logo--light { color: #fff; }
-.logo--light .logo__mark {
-  height: 44px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #fff;
-}
 .logo--light .logo__text span { color: #a8b3cf; }
 
 /* ---------- Hero ---------- */
